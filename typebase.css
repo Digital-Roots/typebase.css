@@ -3,7 +3,7 @@
 html {
   /* Change default typefaces here */
   font-family: serif;
-  font-size: 137.5%;
+  font-size: calc(14px + 0.35vw);
   -webkit-font-smoothing: antialiased;
 }
 /* Copy & Lists */
@@ -44,41 +44,49 @@ h6 {
   font-family: sans-serif;
   margin-top: 1.5rem;
   margin-bottom: 0;
-  line-height: 1.5rem;
+  line-height: calc(11px + .35vw);
 }
 h1 {
-  font-size: 4.242rem;
-  line-height: 4.5rem;
-  margin-top: 3rem;
+  font-size: 2.842rem;
+  line-height: 3.35;
+  margin-top: 2.85rem;
 }
 h2 {
-  font-size: 2.828rem;
-  line-height: 3rem;
-  margin-top: 3rem;
+  font-size: 2.528rem;
+  line-height: 3.25;
 }
 h3 {
-  font-size: 1.414rem;
+  font-size: calc(2.114rem + .5vw);
+  line-height: 2.6;
 }
 h4 {
-  font-size: 0.707rem;
+  font-size: calc(1.407rem + .5vw);
 }
 h5 {
-  font-size: 0.4713333333333333rem;
+  font-size: calc(1.013333333333333rem + .5vw);
 }
 h6 {
-  font-size: 0.3535rem;
+  font-size: calc(0.7535rem + .85vw);
 }
 /* Tables */
-table {
-  margin-top: 1.5rem;
-  border-spacing: 0px;
-  border-collapse: collapse;
+table{
+	border-spacing: 0;
+	width: 100%;
 }
-table td,
-table th {
-  padding: 0;
-  line-height: 33px;
+td,
+th{
+	border-bottom: .1rem solid grey;
+	padding: 1.2rem 1.5rem;
+	text-align: center;
 }
+td:first-child,
+th:first-child{
+		padding-left: 0;
+  }
+  td:first-child,
+  th:first-child{
+    padding-right: 0;
+  }
 /* Code blocks */
 code {
   vertical-align: bottom;
